@@ -1,5 +1,8 @@
 import React from 'react'
 import { GoogleOutlined } from '@ant-design/icons';
+import firebase from "firebase/app";
+
+import { auth } from "../firebase";
 
 const Login = () => {
     return (
@@ -7,7 +10,8 @@ const Login = () => {
             <div id="login-card">
                 <h2>Welcome to InstaChat!</h2>
                 <div
-                className="login-button google">
+                className="login-button google"
+                onClick = {() => auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}>
                     <GoogleOutlined /> Sign in with Google 
 
                 </div>
