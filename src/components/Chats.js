@@ -65,7 +65,7 @@ const Chats = () => {
       <div className="chats-page">
         <div className="nav-bar">
           <div className="logo-tab">
-            InstaChat
+            Google Chat
           </div>
           <div onClick={handleLogout} className="logout-tab">
           Logout
